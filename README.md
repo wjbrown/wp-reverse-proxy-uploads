@@ -2,11 +2,7 @@
 
 Allows you to specify a reverse proxy (like AWS cloudfront) to serve attachment files.
 
-## Requirements
-
-You need to have a reverse-proxy setup to use this plugin. 
-
-[Here's a guide for setting up cloudfront on AWS](https://atenea.marfeel.com/atn/marfeel-press/systems-requirements/set-up-a-reverse-proxy-configuration/create-a-reverse-proxy-and-cache-using-amazon-cloudfront)
+## What it does
 
 The general idea behind a reverse proxy is that instead of outputting an image tag like this:
 
@@ -17,6 +13,12 @@ You will ouput something like this:
     <img src="http://12345678.cloudfront.net/uploads/logo.png">
 
 Behind the scenes, the cloudfront.net server will serve the logo up from its cache.  If the logo isn't in its cache, it will fetch a copy from yoursite.com, cache it and serve it.
+
+## Requirements
+
+You need to have a reverse-proxy setup to use this plugin. 
+
+[Here's a guide for setting up cloudfront on AWS](https://atenea.marfeel.com/atn/marfeel-press/systems-requirements/set-up-a-reverse-proxy-configuration/create-a-reverse-proxy-and-cache-using-amazon-cloudfront)
 
 ## Installation
 
