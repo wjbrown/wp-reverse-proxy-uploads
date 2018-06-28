@@ -24,9 +24,11 @@ Behind the scenes, the cloudfront.net server will serve the logo up from its cac
 2. Activate the plugin through the admin.
 3. Open wp-config.php and add the following
 
-    `define('REVERSE_PROXY_BASE_URL', 'YOUR-URL-HERE');`
-
-When specifying the url, do NOT include the scheme (http:// or https://).  Just the hostname, something like '12345678.cloudfront.net'.
+    ```
+    define('REVERSE_PROXY_BASE_URL', 'YOUR-URL-HERE');
+    // do NOT include the scheme (http:// or https://)
+    // Just the hostname, something like '12345678.cloudfront.net'.
+    ```
 
 ## Why bother with this?
 
